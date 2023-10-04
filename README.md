@@ -1,2 +1,0 @@
-# inception
-Course 42
