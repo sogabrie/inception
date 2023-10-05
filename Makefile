@@ -22,8 +22,8 @@ fclean:
 	@docker network prune --force
 	@docker volume prune --force
 
-clean_data:
-	@sudo rm -rf ~/data/wordpress/*
-	@sudo rm -rf ~/data/mariadb/*
+fclean_data: fclean
+	@sudo rm -rf ~/data
+#	@sudo rm -rf ~/data/mariadb/*
 
-.PHONY	: all build down re clean fclean clean_data
+.PHONY	: all build down re clean fclean fclean_data
